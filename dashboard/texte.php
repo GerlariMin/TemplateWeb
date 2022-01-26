@@ -27,7 +27,7 @@ class TexteTableauBord
                 'utilisateur' => $_SESSION['civilite'] . ' ' . $_SESSION['nom'] . ' ' . $_SESSION['prenom'],
                 'login' => $_SESSION['login'],
                 'nom' => $_SESSION['nom'],
-                'prenom' => $_SESSION['nom'],
+                'prenom' => $_SESSION['prenom'],
                 'civilite' => $_SESSION['genre'],
             ];
     }

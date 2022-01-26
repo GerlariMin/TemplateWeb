@@ -8,25 +8,12 @@
 
     $config['variables']['chemin'] = "../";
 
-    /**              **
-     * Détails auteur *
-     **              **/
-
-
     // BDD
     $config['bdd']['dbname'] = 'devops';
     $config['bdd']['host'] = 'localhost';
     $config['bdd']['username'] = 'root';
     $config['bdd']['password'] = '';
     $config['bdd']['dsn'] = 'mysql:host=' . $config['bdd']['host'] . ';dbname=' . $config['bdd']['dbname'];
-
-    // identité
-    $config['auteur']['nom'] = "MINBIELLE";
-    $config['auteur']['prenom'] = "Morgan";
-    // description
-    $config['auteur']['titre'] = "Alternant développeur";
-    $config['auteur']['etablissement'] = "CFA AFORP / Ecole Polytechnique";
-    $config['auteur']['annee'] = "ETGL P59";
 
     /**      **
      * Erreur *
