@@ -1,0 +1,48 @@
+<div class="card mx-auto mt-5 w-75">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="../ressources/images/img-001.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h2 class="card-title mb-5">Mon Tableau de bord</h2>
+                {{#donnees}}
+                    <h3>{{utilisateur}}</h3>
+                    <h3>Login: {{login}}</h3>
+                    <h3>Nom: {{nom}}</h3>
+                    <h3>Prénom: {{prenom}}</h3>
+                    <h3>Civilité: {{civilite}}</h3>
+                    <div class="card-text">
+                        <h3>Compétences: </h3>
+                        <div class="progress mb-1">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-1">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-1">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-1">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                {{/donnees}}
+                {{^donnees}}
+                    <div class="card-text mt-5">
+                        <h4>Chargement des données...</h4>
+                        <div class="spinner-grow text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-secondary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                {{/donnees}}
+            </div>
+        </div>
+    </div>
+</div>
