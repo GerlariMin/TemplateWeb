@@ -13,6 +13,8 @@
             }catch(PDOException $e){
                 $erreur = 'Connexion échouée: '. $e->getMessage();
                 error_log($erreur);
+                header("Location: ../../erreur/?erreur=500");
+                exit();
             }
         }
 

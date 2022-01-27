@@ -13,7 +13,7 @@
     $config['bdd']['host'] = 'localhost';
     $config['bdd']['username'] = 'root';
     $config['bdd']['password'] = '';
-    $config['bdd']['dsn'] = 'mysql:host=' . $config['bdd']['host'] . ';dbname=' . $config['bdd']['dbname'];
+    $config['bdd']['dsn'] = 'mysql:host=' . $config['bdd']['host'] . ';port=3306;dbname=' . $config['bdd']['dbname'];
 
     /**      **
      * Erreur *
