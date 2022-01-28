@@ -26,7 +26,7 @@
             return self::$instance;
         }
 
-        public function recupererUtilisateur($login, $motDePasse): mixed
+        public function recupererUtilisateur($login, $motDePasse)
         {
             $req = $this->bdd->prepare("SELECT utilisateur_Civilite AS CIVILITE, utilisateur_Nom AS NOM, utilisateur_Prenom AS PRENOM FROM utilisateur WHERE utilisateur_Login = :login AND utilisateur_Password = :motDePasse;");
             $req->bindValue(":login", $login);
