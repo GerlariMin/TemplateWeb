@@ -40,4 +40,9 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-INSERT INTO `devops`.`utilisateur` (`utilisateur_Nom`, `utilisateur_Prenom`, `utilisateur_Civilite`, `utilisateur_Login`, `utilisateur_Password`) VALUES ('SIBLE', 'An', 'homme', 'ansible', 'ansible');
+INSERT INTO `devops`.`utilisateur` (`utilisateur_Nom`, `utilisateur_Prenom`, `utilisateur_Civilite`, `utilisateur_Login`, `utilisateur_Password`) VALUES ('MINBIELLE'     , 'Morgan'     , 'homme', 'GerlariMin', 'GerlariMin');
+INSERT INTO `devops`.`utilisateur` (`utilisateur_Nom`, `utilisateur_Prenom`, `utilisateur_Civilite`, `utilisateur_Login`, `utilisateur_Password`) VALUES ('TAHA'          , 'Jean-David' , 'homme', 'jtaha'     , 'jtaha');
+INSERT INTO `devops`.`utilisateur` (`utilisateur_Nom`, `utilisateur_Prenom`, `utilisateur_Civilite`, `utilisateur_Login`, `utilisateur_Password`) VALUES ('WEIL'          , 'François'   , 'homme', 'fweil'     , 'fweil');
+INSERT INTO `devops`.`utilisateur` (`utilisateur_Nom`, `utilisateur_Prenom`, `utilisateur_Civilite`, `utilisateur_Login`, `utilisateur_Password`) VALUES ('ANDRIAMIARISOA', 'Ny Tsanta'  , 'homme', 'nyts'      , 'nyts');
+
+
